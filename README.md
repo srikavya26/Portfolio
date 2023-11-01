@@ -6,7 +6,7 @@ Portfolio is a personal website that showcases your skills, projects, and achiev
 #### Deployment -- 
 Portfolio is deployed on Netlify, ensuring it's accessible online. Netlify offers continuous deployment and automated build processes, making it easy to update and maintain your portfolio.
 #### Technologies Used -- 
-HTML: The structure and content of your portfolio are built using HTML to create a well-organized web page.
+HTML: The structure and content of portfolio are built using HTML to create a well-organized web page.
 
 CSS: Cascading Style Sheets (CSS) are used to apply custom styling, making your portfolio visually appealing.
 
