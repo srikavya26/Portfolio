@@ -20,7 +20,7 @@
 
 .name {
     font-size: 45px;
-    animation: nameAnimation 2s ease-in-out infinite;
+    animation: nameAnimation 1s ease-in-out infinite;
     font-family: 'El Messiri', sans-serif;
     ;
 }
