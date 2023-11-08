@@ -1,5 +1,5 @@
 # Portfolio
-#### Live Link -- https://gleaming-vacherin-3c4502.netlify.app/
+#### Live Link -- https://srikavyavasala.netlify.app/
 This README provides a summary of the portfolio website created using HTML, CSS, and JavaScript and deployed on Netlify.
 #### Project Overview -- 
 Portfolio is a personal website that showcases your skills, projects, and achievements as a web developer, designer, or any other profession you want to highlight. It's designed to leave a lasting impression on potential clients, employers, and collaborators.
