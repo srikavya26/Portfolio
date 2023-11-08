@@ -3,7 +3,7 @@ window.addEventListener('load', () => {
     setTimeout(() => {
         const loadingScreen = document.getElementById('loading-screen');
         loadingScreen.style.display = 'none';
-    }, 200);
+    }, 250);
 });
 const scrollToTop = document.querySelector("#scroll-to-top a");
 scrollToTop.addEventListener("click", function (e) {
