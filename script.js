@@ -1,18 +1,5 @@
 //Loading screen
-window.addEventListener('load', () => {
-    setTimeout(() => {
-        const loadingScreen = document.getElementById('loading-screen');
-        loadingScreen.style.display = 'none';
-    }, 270);
-});
-const scrollToTop = document.querySelector("#scroll-to-top a");
-scrollToTop.addEventListener("click", function (e) {
-    e.preventDefault();
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-});
+
 //Navbar
 document.addEventListener("DOMContentLoaded", function () {
     const toggleButton = document.getElementById("navbar-toggle");
