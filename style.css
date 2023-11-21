@@ -275,6 +275,15 @@ h2 {
     margin-left: 20px;
 }
 
+.github-link {
+    color: #4078c0;
+    /* GitHub color */
+}
+
+.codepen-link {
+    color: #4078c0;
+    /* CodePen color */
+}
 
 .project-image {
     flex: 0 0 250px;
