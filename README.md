@@ -13,3 +13,5 @@ CSS: Cascading Style Sheets (CSS) are used to apply custom styling, making your 
 JavaScript: JavaScript adds interactivity to your portfolio, allowing for dynamic features and smooth user interactions.
 
 Netlify: Portfolio is deployed on Netlify, a popular hosting and continuous integration platform. It ensures that your website is accessible on the internet.
+## Screenshots:
+![Screenshot 2023-11-21 at 12 05 54](https://github.com/srikavya26/Portfolio/assets/95865936/5c0a0f32-1e1d-45d2-95d5-c2d6325fcd53)
