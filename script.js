@@ -122,26 +122,5 @@ function scrolling() {
             img.style.animationPlayState = "running"
         }
     })
-}
-document.addEventListener("DOMContentLoaded", function () {
-  const images = document.querySelectorAll(".photo-grid img");
+};
 
-  const options = {
-    threshold: 0.5, // Adjust this threshold as needed
-  };
-
-  const imageObserver = new IntersectionObserver(function (entries, observer) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        const lazyImage = entry.target;
-        lazyImage.src = lazyImage.dataset.src;
-        lazyImage.classList.remove("lazy");
-        imageObserver.unobserve(lazyImage);
-      }
-    });
-  }, options);
-
-  images.forEach(function (image) {
-    imageObserver.observe(image);
-  });
-});
