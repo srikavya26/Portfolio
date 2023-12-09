@@ -1,60 +1,16 @@
-/* Loading Screen */
-#loading-screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, #e6e6e6, #666666);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-}
-
-.loader {
-    text-align: center;
-    color: rgb(42, 42, 42);
-    font-size: 24px;
-}
-
-.name {
-    font-size: 45px;
-    animation: nameAnimation 0.6s ease-in-out infinite;
-    font-family: 'El Messiri', sans-serif;
-    ;
-}
-
-@media (max-width: 768px) {
-    .name {
-        font-size: 45px;
-        animation: nameAnimation 0.5s ease-in-out infinite;
-    }
-}
-
-@keyframes nameAnimation {
-    0% {
-        transform: translateY(0);
-        opacity: 0;
-    }
-
-    50% {
-        transform: translateY(-10px);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 0;
-    }
-}
-
-/* end load */
-
-#header {
-    margin: 0;
-    padding: 0;
-    font-family: 'Sometype Mono', monospace;
+#loadingScreen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            font-family: 'Tapestry', serif;
+            font-size: 50px;
 }
 
 .sticky-header {
