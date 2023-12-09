@@ -122,5 +122,5 @@ function scrolling() {
             img.style.animationPlayState = "running"
         }
     })
-};
+}
 
