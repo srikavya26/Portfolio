@@ -1,12 +1,19 @@
 //Loading screen
-const scrollToTop = document.querySelector("#scroll-to-top a");
-scrollToTop.addEventListener("click", function (e) {
-    e.preventDefault();
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-});
+document.addEventListener("DOMContentLoaded", function() {
+            gsap.to("#loadingScreen", {
+                duration: 2,
+                opacity: 0.1,
+              x:10,
+             
+                onComplete: function() {
+                    
+                    document.getElementById("loadingScreen").style.display = "none";
+                    document.getElementById("portfolioContent").style.display = "block";
+                    
+                    
+                }
+            });
+        });
 //Navbar
 document.addEventListener("DOMContentLoaded", function () {
     const toggleButton = document.getElementById("navbar-toggle");
