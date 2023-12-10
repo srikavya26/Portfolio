@@ -21,13 +21,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=McLaren&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap" rel="stylesheet">
-    <!-- Include GSAP library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
     <title>Sri's Portfolio</title>
 </head>
@@ -36,10 +32,13 @@
 
     <!---loading screen -->
 
-        
-    
+    <div id="landing-page">
+
+    </div>
+    <div id="wave"></div>
 
     <!--header-->
+
     <header class="sticky-header">
         <div class="nav ul">
             <nav class="navbar">
@@ -87,18 +86,22 @@
                 </div>
                 <p>I built a project to develop a feature-rich web application for managing PG hostel accommodations
                     using
-                    JavaScript, React, and PHP. The application improved hostel management processes, offering enhanced
-                    security and an optimized user experience. Successful API integration resulted in an 85% accuracy
-                    rate for displaying hostel locations.Click the button or image to experience the projects live.</p>
+                    JavaScript, React, and PHP. The application improved hostel management processes, offering
+                    enhanced
+                    security and an optimized user experience. Successful API integration resulted in an 85%
+                    accuracy
+                    rate for displaying hostel locations.Click the button to experience the projects live.</p>
                 <p>Explore the source code on
                     <i class="fa fa-github" aria-hidden="true"></i>
+
                     <a href="https://github.com/srikavya26/PG-Life_" class="github-link" target="_blank">GitHub</a>
                     and
                     <i class="fa fa-codepen" aria-hidden="true"></i>
                     <a href="https://codepen.io/Vasala-Srikavya/" class="codepen-link" target="_blank">CodePen</a>.
                 </p>
+
             </div>
-           <div class="project-image">
+            <div class="project-image">
                 <a href="https://endearing-platypus-27396d.netlify.app" target="_blank">
                     <img src="images/screen.jpeg" alt="Project Image">
                 </a>
@@ -108,8 +111,8 @@
             <div class="project-content">
                 <a href="https://curious-dusk-acf82e.netlify.app" target="_blank" class="btn">Games.io</a>
                 <p>I built this webpage during my college studies, featuring two interactive games from GitHub.
-                    <span>Click the button or image to experience these projects live.</span>
-                </p>
+                    <span>Click the button to experience these projects live.</span>
+                    <br>
                 <p>Explore the source code on
                     <i class="fa fa-github" aria-hidden="true"></i>
                     <a href="https://github.com/srikavya26/Example-Projects" class="github-link"
@@ -133,11 +136,12 @@
             <h2>Photos</h2>
             <div class="line"></div>
         </div>
+
         <h4>Passionate about photography. Scroll
             down to explore my photo gallery.</h4><br>
         <div class="photo-grid">
-<div class="photo">
-                <img src="images/image1.jpg" alt="Image 1">
+
+            <div class="photo" data-src="images/IMG_0297.jpeg" alt="Image 1">
             </div>
             <div class="photo">
                 <img src="images/image2.jpg" alt="Image 2">
@@ -163,6 +167,9 @@
             <div class="photo">
             </div>
         </div>
+        </div>
+        <div class="modal" id="modal">
+            <img id="modal-img" alt="modal-img">
         </div>
     </section>
     <!--Skills-->
@@ -208,7 +215,6 @@
         <div class="skill-card">
             <img class="skill-icon" src="https://img.icons8.com/color/96/java-coffee-cup-logo--v1.png" alt="Java" />
             <div class="skill-title">Java</div>
-            <div class="skill-description">Java</div>
         </div>
         <div class="skill-card">
             <img class="skill-icon" src="https://img.icons8.com/color/96/python--v1.png" alt="Python" />
@@ -265,17 +271,20 @@
                 <ul class="social__media">
                     <li><a href="https://www.linkedin.com/in/vasala-srikavya-9368b5273/" target="_blank"><i
                                 class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-
+                    </li>
+                    <li><a href="https://codepen.io/Vasala-Srikavya" target="_blank" class="contact_icon">
+                            <i class="fa fa-codepen" aria-hidden="true"></i></a>
                     </li>
                     <li><a href="mailto:vskavya02@gmail.com" target="_blank"><i class="fa fa-envelope"
                                 aria-hidden="true"></i></a></li>
                     <li><a href="https://github.com/srikavya26" target="_blank"><i class="fa fa-github"
                                 aria-hidden="true"></i></a></li>
-                    <li><a href="https://codepen.io/Vasala-Srikavya" target="_blank" class="contact_icon">
-                            <i class="fa fa-codepen" aria-hidden="true"></i></a>
-                    </li>
+
                     <li><a href="https://500px.com/p/srikavyavasala?view=photos" target="_blank"><i class="fa fa-500px"
                                 aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/srikavyavasala/" target="_blank"><i class="fa fa-instagram"
+                                aria-hidden="true"></i></a>
+
 
                 </ul>
             </div>
@@ -284,7 +293,7 @@
     </div>
     <div id="scroll-to-top">
         <a href="#top">^</a>
-</div>
+    </div>
     </footer>
 
     <script src="script.js"></script>
