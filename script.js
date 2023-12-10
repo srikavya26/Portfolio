@@ -1,5 +1,12 @@
-//Loading screen
 
+const scrollToTop = document.querySelector("#scroll-to-top a");
+scrollToTop.addEventListener("click", function (e) {
+    e.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
 //Navbar
 document.addEventListener("DOMContentLoaded", function () {
     const toggleButton = document.getElementById("navbar-toggle");
@@ -16,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const cursorElement = document.getElementById('cursor');
 
-    const text1 = "Creating websites and Capturing memories..";
+    const text1 = "Creating websites, capturing memories..";
 
     let charIndex1 = 0;
     let charIndex2 = 0;
@@ -70,36 +77,49 @@ projectCards.forEach((card) => {
 });
 
 // project card 
-document.querySelectorAll(".live-link").forEach(link => {
-    link.addEventListener("click", function (event) {
-        event.preventDefault();
-        const targetId = this.getAttribute("href").substring(1);
-        const targetElement = document.getElementById(targetId);
-        if (targetElement) {
-            window.scrollTo({
-                top: targetElement.offsetTop,
-                behavior: "smooth"
-            });
+// Get all project cards
+const projectCards = document.querySelectorAll('.project-card');
+
+// Function to add the animation class
+function addAnimationClass(entries, observer) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animated');
+            observer.unobserve(entry.target);
         }
     });
+}
+
+// Create an IntersectionObserver
+const cardObserver = new IntersectionObserver(addAnimationClass, {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.5, // Adjust this value to trigger animation at your desired point
 });
-const imgs = document.querySelectorAll("section img")
-document.querySelectorAll(".live-link").forEach(link => {
-    link.addEventListener("click", function (event) {
-        event.preventDefault();
-        const targetId = this.getAttribute("href").substring(1);
-        const targetElement = document.getElementById(targetId);
-        if (targetElement) {
-            window.scrollTo({
-                top: targetElement.offsetTop,
-                behavior: "smooth"
-            });
+
+// Observe each project card
+projectCards.forEach(card => {
+    cardObserver.observe(card);
+});
+document.addEventListener("DOMContentLoaded", function () {
+    const photoGrid = document.querySelector(".photo-grid");
+    const modal = document.getElementById("modal");
+    const modalImg = document.getElementById("modal-img");
+
+    photoGrid.addEventListener("click", function (event) {
+        const clickedPhoto = event.target.closest(".photo");
+        if (clickedPhoto) {
+            const imageUrl = clickedPhoto.getAttribute("data-src");
+            modalImg.src = imageUrl;
+            modal.style.display = "flex";
         }
+    });
+
+    modal.addEventListener("click", function () {
+        modal.style.display = "none";
     });
 });
 
-scrolling()
-window.onscroll = scrolling
 //scroll
 function scrolling() {
     const viewportHeight = window.innerHeight
@@ -109,4 +129,3 @@ function scrolling() {
         }
     })
 }
-
