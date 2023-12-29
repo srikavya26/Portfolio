@@ -16,6 +16,14 @@ document.addEventListener("DOMContentLoaded", function () {
         menu.classList.toggle("active");
         toggleButton.classList.toggle("active");
     });
+    const navItems = document.querySelectorAll(".navbar-menu a");
+
+    navItems.forEach(function (item) {
+        item.addEventListener("click", function () {
+            menu.classList.remove("active");
+            toggleButton.classList.remove("active");
+        });
+    });
 });
 //type text
 document.addEventListener('DOMContentLoaded', function () {
