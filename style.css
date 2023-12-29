@@ -120,7 +120,7 @@ a {
         left: 0;
         width: 100vw;
         height: 50vh;
-        background-color: rgb(112, 111, 111);
+        background: linear-gradient(90deg, #e5e0e0, #919191);
     }
 
     .navbar-menu.active {
