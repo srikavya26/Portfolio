@@ -52,7 +52,7 @@ body.dark-mode {
 }
 
 .sticky-header {
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -117,17 +117,24 @@ a {
         position: absolute;
         top: 60px;
         left: 0;
-        background-color: rgb(252, 252, 252);
+        weight:100vw;
+        height:50vh;
+            background: linear-gradient(90deg, #e5e0e0, #919191);
+
         width: 100%;
     }
 
     .navbar-menu.active {
         display: flex;
+        font-size:24px;
+        align-items:center;
+        justify-content:center;
     }
 
     .navbar-toggle {
         display: block;
         cursor: pointer;
+        font-size:24px;
     }
 
     .bar {
@@ -149,8 +156,11 @@ a {
     .navbar-toggle.active .bar:nth-child(3) {
         transform: rotate(45deg) translate(-5px, -6px);
     }
+    .navbar-menu a {
+        font-size: 28px;
+        padding:10px;
 }
-
+}
 /*logo*/
 .right img {
     max-width: 120px;
