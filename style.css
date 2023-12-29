@@ -88,6 +88,7 @@ body.dark-mode {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     display: flex;
+
     justify-content: space-between;
     align-items: center;
     padding: 10px 30px;
@@ -106,10 +107,6 @@ body.dark-mode {
 a {
     font-family: 'Merriweather', serif;
     text-decoration: none;
-    color: rgb(0, 0, 0);
-}
-
-/* Media query for smaller screens */
     color: rgb(0, 0, 0);
 }
 
@@ -174,6 +171,7 @@ a {
 
     }
 }
+
 
 /*logo*/
 .right img {
@@ -295,12 +293,12 @@ h2 {
 
 .github-link {
     color: #4078c0;
-    /* GitHub color */
+
 }
 
 .codepen-link {
     color: #4078c0;
-    /* CodePen color */
+
 }
 
 .project-image {
