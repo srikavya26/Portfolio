@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const cursorElement = document.getElementById('cursor');
 
-    const text1 = "Creating websites, capturing memories..";
+    const text1 = "Creating websites, Capturing memories..";
 
     let charIndex1 = 0;
     let charIndex2 = 0;
@@ -88,7 +88,7 @@ projectCards.forEach((card) => {
 // Get all project cards
 const projectCards = document.querySelectorAll('.project-card');
 
-// Function to add the animation class
+
 function addAnimationClass(entries, observer) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -102,7 +102,7 @@ function addAnimationClass(entries, observer) {
 const cardObserver = new IntersectionObserver(addAnimationClass, {
     root: null,
     rootMargin: '0px',
-    threshold: 0.5, // Adjust this value to trigger animation at your desired point
+    threshold: 0.5, 
 });
 
 // Observe each project card
