@@ -223,8 +223,8 @@ a {
 .about-me {
   background-color: #f8f9fa;
   border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+  box-shadow: 4px 4px 6px rgba(0.1, 0, 0, 0.1);
 }
 
 .section {
