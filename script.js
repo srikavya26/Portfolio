@@ -84,6 +84,23 @@ projectCards.forEach((card) => {
     });
 });
 
+window.onload = function() {
+  var aboutMe = document.querySelector('.about-me');
+  aboutMe.style.opacity = '0';
+  fadeIn(aboutMe);
+};
+
+function fadeIn(element) {
+  var opacity = 0;
+  var timer = setInterval(function() {
+    if (opacity >= 1) {
+      clearInterval(timer);
+    }
+    element.style.opacity = opacity;
+    opacity += 0.1;
+  }, 50);
+}
+
 // project card 
 // Get all project cards
 const projectCards = document.querySelectorAll('.project-card');
