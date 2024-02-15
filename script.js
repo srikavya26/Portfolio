@@ -28,12 +28,11 @@ document.addEventListener("DOMContentLoaded", function () {
 //type text
 document.addEventListener('DOMContentLoaded', function () {
     const textElement1 = document.getElementById('text-line1');
-const textElement2 = document.getElementById('text-line2');
-
+    const textElement2 = document.getElementById('text-line2');
     const cursorElement = document.getElementById('cursor');
 
-    const text1 = "Hello!😊👋 ";
-    const text2 = "I am Kavya..";
+    const text1 = "Hello!😊👋";
+    const text2 = "I am ..";
     let charIndex1 = 0;
     let charIndex2 = 0;
 
@@ -51,6 +50,7 @@ const textElement2 = document.getElementById('text-line2');
 
     typeText();
 });
+
 //About Me
 window.onload = function() {
   var aboutMe = document.querySelector('.about-me');
