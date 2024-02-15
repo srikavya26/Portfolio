@@ -28,11 +28,12 @@ document.addEventListener("DOMContentLoaded", function () {
 //type text
 document.addEventListener('DOMContentLoaded', function () {
     const textElement1 = document.getElementById('text-line1');
+const textElement1 = document.getElementById('text-line2');
 
     const cursorElement = document.getElementById('cursor');
 
-    const text1 = "Hello! I am Kavya..";
-
+    const text1 = "Hello!😊👋 ;
+    const text2 = "I am Kavya..";
     let charIndex1 = 0;
     let charIndex2 = 0;
 
