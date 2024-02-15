@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const cursorElement = document.getElementById('cursor');
 
-    const text1 = "Creating websites, Capturing memories..";
+    const text1 = "Hello! I am Kavya..";
 
     let charIndex1 = 0;
     let charIndex2 = 0;
