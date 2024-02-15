@@ -242,7 +242,20 @@ p {
   color: #333;
 }
 
+@media only screen and (max-width: 600px) {
+  .about-me {
+    padding: 15px;
+  }
 
+  .about-me h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
 /*project section*/
 
 #projects {
