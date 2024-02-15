@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
       textElement2.textContent += text2.charAt(charIndex2);
       charIndex2++;
       setTimeout(typeText, typingSpeed);
-    } else if (isTyping1) { // Start typing line 2 after finishing line 1
+    } **else if (isTyping1) {** // Start typing line 2 after finishing line 1
       isTyping1 = false;
       setTimeout(function () {
         isTyping2 = true;
