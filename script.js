@@ -32,7 +32,7 @@ const textElement2 = document.getElementById('text-line2');
 
     const cursorElement = document.getElementById('cursor');
 
-    const text1 = "Hello!😊👋 ;
+    const text1 = "Hello!😊👋 ";
     const text2 = "I am Kavya..";
     let charIndex1 = 0;
     let charIndex2 = 0;
