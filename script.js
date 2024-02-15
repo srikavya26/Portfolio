@@ -40,16 +40,17 @@ document.addEventListener('DOMContentLoaded', function () {
         if (charIndex1 < text1.length) {
             textElement1.textContent += text1.charAt(charIndex1);
             charIndex1++;
-            setTimeout(typeText, 35);
+            setTimeout(typeText, 60);
         } else if (charIndex2 < text2.length) {
             textElement2.textContent += text2.charAt(charIndex2);
             charIndex2++;
-            setTimeout(typeText, 35);
+            setTimeout(typeText, 60);
         }
     }
 
     typeText();
 });
+//About Me
 window.onload = function() {
   var aboutMe = document.querySelector('.about-me');
   aboutMe.style.opacity = '0';
