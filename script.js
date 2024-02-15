@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //type text
 document.addEventListener('DOMContentLoaded', function () {
     const textElement1 = document.getElementById('text-line1');
-const textElement1 = document.getElementById('text-line2');
+const textElement2 = document.getElementById('text-line2');
 
     const cursorElement = document.getElementById('cursor');
 
