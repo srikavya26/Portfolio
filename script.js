@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const cursorElement = document.getElementById('cursor');
 
     const text1 = "Hello!😊👋";
-    const text2 = "I am ..";
+    const text2 = "I am Kavya..";
     let charIndex1 = 0;
     let charIndex2 = 0;
 
@@ -40,10 +40,12 @@ document.addEventListener('DOMContentLoaded', function () {
         if (charIndex1 < text1.length) {
             textElement1.textContent += text1.charAt(charIndex1);
             charIndex1++;
-            setTimeout(typeText, 60);
-        } else if (charIndex2 < text2.length) {
+        }
+        if (charIndex2 < text2.length) {
             textElement2.textContent += text2.charAt(charIndex2);
             charIndex2++;
+        }
+        if (charIndex1 < text1.length || charIndex2 < text2.length) {
             setTimeout(typeText, 60);
         }
     }
