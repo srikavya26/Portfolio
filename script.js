@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const cursorElement = document.getElementById('cursor');
 
     const text1 = "Hello!😊👋";
-    const text2 = "I am Kavya..";
+    const text2 = "I am ..";
     let charIndex1 = 0;
     let charIndex2 = 0;
 
